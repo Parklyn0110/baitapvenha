@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Bài Tập</title>
+</head>
+<body>
+
+    <h1>Console Log Example</h1>
+    
+    <script>
+        // Bài tập 1: Tính chu vi và diện tích hình tròn
+        function calculateCircle() {
+            let r = 50
+            
+                let circumference = 2 * Math.PI * r; // Chu vi
+                let area = Math.PI * r * r; // Diện tích
+                
+                console.log(`Chu vi hình tròn là: ${circumference.toFixed(2)}`);
+                console.log(`Diện tích hình tròn là: ${area.toFixed(2)}`);
+            
+        }
+
+        // Bài tập 2: Tính các biểu thức p1, p2, p3
+        function calculateExpressions() {
+            let x = 2
+            let y = 3
+            let z = 5
+            
+            
+                let p1 = Math.pow(x + 3 * y - z, 5); // Biểu thức p1
+                let p2 = (x - 2 * y) / z; // Biểu thức p2
+                let p3 = x + y + z; // Biểu thức p3
+                
+                console.log(`Giá trị p1 = (x + 3y - z)^5 = ${p1.toFixed(2)}`);
+                console.log(`Giá trị p2 = (x - 2y) / z = ${p2.toFixed(2)}`);
+                console.log(`Giá trị p3 = x + y + z = ${p3.toFixed(2)}`);
+           
+        }
+
+        // Gọi hàm tính toán
+        calculateCircle();
+        calculateExpressions();
+    </script>
+
+</body>
+</html>
